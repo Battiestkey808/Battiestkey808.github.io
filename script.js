@@ -5,10 +5,10 @@ document.addEventListener('DOMContentLoaded', function() {
     const closeBtn = document.querySelector('.close-btn');
 
     hamburger.addEventListener('click', function() {
-        sidebar.style.left = '0'; // Show the sidebar
+        sidebar.classList.add('show'); // Show the sidebar
     });
 
     closeBtn.addEventListener('click', function() {
-        sidebar.style.left = '-250px'; // Hide the sidebar
+        sidebar.classList.remove('show'); // Hide the sidebar
     });
 });
