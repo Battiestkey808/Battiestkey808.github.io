@@ -191,7 +191,7 @@ h6 {
 
 /* Hamburger styling */
 .hamburger {
-  display: block; /* Ensure it's always visible */
+  display: none; /* Ensure it's always visible */
   cursor: pointer;
   color: #fff;
   font-size: 24px;
@@ -215,7 +215,7 @@ h6 {
   }
 
   .hamburger {
-    display: block; /* Show hamburger menu on mobile */
+    display: none; /* Show hamburger menu on mobile */
   }
 }
 
