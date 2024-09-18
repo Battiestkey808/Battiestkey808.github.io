@@ -1,0 +1,326 @@
+/* General reset and box-sizing for better styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+  font-family: Garamond, sans-serif;
+  font-size: 40px;
+  background-color: lightblue;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+/* Background image styling */
+#background-image {
+  background-image: url('Background_image.jpg'); /* Use the correct path to your image */
+  background-size: cover; /* Cover the entire area */
+  background-position: center; /* Center the background image */
+  height: 400px; /* Full viewport height */
+  width: 100%; /* Full width */
+  position: absolute; /* Absolute positioning to cover the background */
+  top: 0;
+  left: 0;
+  z-index: -1; /* Send the background behind other content */
+}
+
+/* Heading styling */
+h1, h2, h4, h5, h6
+{
+  background-color: #9DD1F1;
+  color: black;
+  border: 3px solid black;
+  text-align: center;
+  display: inline-block;
+  margin: 10px;
+  padding: 12px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+h1{
+  margin-top: 50px;
+}
+
+h2{
+   margin-top: 140px;
+   margin-bottom: 150px;
+}
+
+h4{
+  font-size: 50px;
+  color:black;
+  font-weight: bold;
+  margin-top:30px;
+}
+
+h5{
+  margin-top: 50px;
+  font-size: 50px;
+  margin-bottom: 50px;
+}
+
+h6 {
+  margin-top: 50px;
+  font-size: 50px;
+}
+
+/* Top bar styling */
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 10px 20px;
+  position: relative; /* Ensure positioning context for the hamburger menu */
+}
+
+/* Logo styling */
+.top-bar .logo  {
+  color: #fff;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Menu styling */
+.menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.menu li {
+  margin-left: 15px;
+}
+
+.menu li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: bold;
+  padding: 8px 12px;
+  transition: background-color 0.3s ease;
+}
+
+.menu li a:hover {
+  background-color: #555;
+  border-radius: 4px;
+}
+
+/* Dropdown styling */
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: white;
+  padding: 10px 15px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {
+  background-color: #555;
+}
+
+.menu li:hover .dropdown-content {
+  display: block;
+}
+
+.sidebar {
+  height: 100%;
+  width: 250px; /* Width of the sidebar */
+  position: fixed; /* Fixed position to the left */
+  top: 0;
+  left: -250px; /* Initially hidden off-screen */
+  background-color: #333;
+  overflow-x: hidden;
+  transition: 0.3s; /* Smooth transition */
+  z-index: 2; /* Ensure it is above other elements */
+}
+
+.sidebar-menu {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar-menu li {
+  margin: 0;
+}
+
+.sidebar-menu li a {
+  color: #fff;
+  text-decoration: none;
+  display: block;
+  padding: 15px;
+  transition: background-color 0.3s ease;
+}
+
+.sidebar-menu li a:hover {
+  background-color: #555;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 25px;
+  font-size: 36px;
+  cursor: pointer;
+  color: #fff;
+}
+
+/* Hamburger styling */
+.hamburger {
+  display: block; /* Ensure it's always visible */
+  cursor: pointer;
+  color: #fff;
+  font-size: 24px;
+}
+
+/* Responsive styling for smaller screens */
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+
+  .menu.active {
+    display: flex;
+  }
+
+  .top-bar {
+    flex-wrap: wrap;
+  }
+
+  .hamburger {
+    display: block; /* Show hamburger menu on mobile */
+  }
+}
+
+.info-box, .update-notice, .calendar-container{
+  background-color: #9DD1F1;
+  border: 2px solid black; /* Light border */
+  padding: 20px; /* Space inside the box */
+  margin: 20px 0; /* Space outside the box */
+  border-radius: 4px; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  max-width: 95%; /* Optional: max width for the box */
+  margin: auto; /* Center the box horizontally */
+  text-align: center; /* Align text to the center */
+  margin-bottom: 50px;
+}
+
+.gen-info {
+  font-family: Garamond, sans-serif; /* Font style */
+  line-height: 1.6; /* Line height for better readability */
+  color: black; /* Text color */
+}
+
+.boldneeded{
+  font-weight: bold;
+}
+
+.faq-info{
+  text-align: left;
+}
+
+#address{
+  font-weight: bold;
+  text-align: center;
+}
+
+h7 {
+  text-align: center;
+  font-size: 35px;
+}
+
+.calendar-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+.calendar-table th,
+.calendar-table td {
+  border: 1px solid #ddd;
+  padding: 15px;
+  text-align: center;
+  vertical-align: top;
+  height: 100px; /* Uniform cell height */
+}
+
+.calendar-table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+
+.calendar-table td {
+  background-color: #ffffff;
+}
+
+.empty-cell {
+  background-color: #f9f9f9;
+}
+
+.email-link {
+  color: blue;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+
+/* Styling for the clickable box */
+.clickable-box {
+    width: 300px;
+    height: 150px;
+    background-color: #3fadf1;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-left: 50px;
+}
+
+.clickable-box:hover {
+    background-color: #1fa2f3;
+}
+
+/* Ensure the <a> tag fills the entire box */
+.clickable-box a {
+    text-decoration: none;
+    color: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.wrapper-main {
+  margin: 350px;
+  width: 500px;
+}
+
+textarea{
+  width:100%;
+  height: 100px;
+  resize: horizontal;
+}
