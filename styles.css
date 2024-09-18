@@ -233,7 +233,13 @@ h6 {
   color: blue;
   text-decoration: underline;
   font-size: 20px;
-}
+   }
+
+  .calendar-table th,
+.calendar-table td {
+  font-size:15px; 
+  
+    }
 }
 
 /* Info box styling */
