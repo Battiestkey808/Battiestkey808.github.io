@@ -29,7 +29,8 @@ body {
 }
 
 /* Heading styling */
-h1, h2, h4, h5, h6 {
+h1, h2, h4, h5, h6
+{
   background-color: #9DD1F1;
   color: black;
   border: 3px solid black;
@@ -41,23 +42,23 @@ h1, h2, h4, h5, h6 {
   text-transform: uppercase;
 }
 
-h1 {
+h1{
   margin-top: 50px;
 }
 
-h2 {
-  margin-top: 140px;
-  margin-bottom: 150px;
+h2{
+   margin-top: 140px;
+   margin-bottom: 150px;
 }
 
-h4 {
+h4{
   font-size: 50px;
-  color: black;
+  color:black;
   font-weight: bold;
-  margin-top: 30px;
+  margin-top:30px;
 }
 
-h5 {
+h5{
   margin-top: 50px;
   font-size: 50px;
   margin-bottom: 50px;
@@ -79,7 +80,7 @@ h6 {
 }
 
 /* Logo styling */
-.top-bar .logo {
+.top-bar .logo  {
   color: #fff;
   text-decoration: none;
   font-size: 24px;
@@ -139,24 +140,14 @@ h6 {
 
 .sidebar {
   height: 100%;
-  width: 250px; /* Default width for larger screens */
+  width: 250px; /* Width of the sidebar */
   position: fixed; /* Fixed position to the left */
   top: 0;
   left: -250px; /* Initially hidden off-screen */
   background-color: #333;
   overflow-x: hidden;
-  transition: left 0.3s ease; /* Smooth transition */
+  transition: 0.3s; /* Smooth transition */
   z-index: 2; /* Ensure it is above other elements */
-}
-
-.sidebar.show {
-  left: 0; /* Slide in when opened */
-}
-
-@media (max-width: 768px) {
-  .sidebar {
-    width: 70%; /* Reduced width for mobile */
-  }
 }
 
 .sidebar-menu {
@@ -215,11 +206,11 @@ h6 {
   }
 
   .hamburger {
-    display: none; /* Show hamburger menu on mobile */
+    display: block; /* Show hamburger menu on mobile */
   }
 }
 
-.info-box, .update-notice, .calendar-container {
+.info-box, .update-notice, .calendar-container{
   background-color: #9DD1F1;
   border: 2px solid black; /* Light border */
   padding: 20px; /* Space inside the box */
@@ -238,15 +229,15 @@ h6 {
   color: black; /* Text color */
 }
 
-.boldneeded {
+.boldneeded{
   font-weight: bold;
 }
 
-.faq-info {
+.faq-info{
   text-align: left;
 }
 
-#address {
+#address{
   font-weight: bold;
   text-align: center;
 }
@@ -290,36 +281,37 @@ h7 {
   font-weight: bold;
 }
 
+
 /* Styling for the clickable box */
 .clickable-box {
-  width: 300px;
-  height: 150px;
-  background-color: #3fadf1;
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  font-size: 18px;
-  border-radius: 10px;
-  cursor: pointer;
-  transition: background-color 0.3s;
-  margin-left: 50px;
+    width: 300px;
+    height: 150px;
+    background-color: #3fadf1;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    margin-left: 50px;
 }
 
 .clickable-box:hover {
-  background-color: #1fa2f3;
+    background-color: #1fa2f3;
 }
 
 /* Ensure the <a> tag fills the entire box */
 .clickable-box a {
-  text-decoration: none;
-  color: white;
-  width: 100%;
-  height: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+    text-decoration: none;
+    color: white;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .wrapper-main {
@@ -327,8 +319,8 @@ h7 {
   width: 500px;
 }
 
-textarea {
-  width: 100%;
+textarea{
+  width:100%;
   height: 100px;
   resize: horizontal;
 }
