@@ -137,8 +137,6 @@ h6 {
   display: block;
 }
 
-/* Sidebar styling */
-/* Sidebar styling */
 .sidebar {
   height: 100%;
   width: 250px; /* Default width for larger screens */
@@ -147,10 +145,19 @@ h6 {
   left: -250px; /* Initially hidden off-screen */
   background-color: #333;
   overflow-x: hidden;
-  transition: 0.3s ease; /* Smooth transition */
+  transition: left 0.3s ease; /* Smooth transition */
   z-index: 2; /* Ensure it is above other elements */
 }
 
+.sidebar.show {
+  left: 0; /* Slide in when opened */
+}
+
+@media (max-width: 768px) {
+  .sidebar {
+    width: 70%; /* Reduced width for mobile */
+  }
+}
 
 .sidebar-menu {
   list-style: none;
@@ -171,10 +178,6 @@ h6 {
 
 .sidebar-menu li a:hover {
   background-color: #555;
-}
-
-.sidebar.show {
-  left: 0; /* Slide in when opened */
 }
 
 .close-btn {
@@ -214,28 +217,19 @@ h6 {
   .hamburger {
     display: block; /* Show hamburger menu on mobile */
   }
-
-  .sidebar {
-    width: 70%; /* Reduce width for mobile */
-    left: -70%; /* Initially hidden off-screen */
-  }
-
-  .sidebar.show {
-    left: 0; /* Slide in when opened */
-  }
 }
 
-
-/* Info box and calendar styling */
 .info-box, .update-notice, .calendar-container {
   background-color: #9DD1F1;
   border: 2px solid black; /* Light border */
   padding: 20px; /* Space inside the box */
-  margin: 20px auto; /* Space outside the box */
+  margin: 20px 0; /* Space outside the box */
   border-radius: 4px; /* Rounded corners */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
   max-width: 95%; /* Optional: max width for the box */
+  margin: auto; /* Center the box horizontally */
   text-align: center; /* Align text to the center */
+  margin-bottom: 50px;
 }
 
 .gen-info {
@@ -262,18 +256,6 @@ h7 {
   font-size: 35px;
 }
 
-.calendar-body {
-  display: flex;
-  justify-content: center;
-  margin: 20px auto;
-}
-
-.calendar-container {
-  width: 80%; /* Responsive width */
-  max-width: 1200px; /* Set max width for large screens */
-  margin: 0 auto;
-}
-
 .calendar-table {
   width: 100%;
   border-collapse: collapse;
@@ -285,7 +267,6 @@ h7 {
   border: 1px solid #ddd;
   padding: 15px;
   text-align: center;
-  font-size: 20px;
   vertical-align: top;
   height: 100px; /* Uniform cell height */
 }
