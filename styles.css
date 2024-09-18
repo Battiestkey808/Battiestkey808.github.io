@@ -215,7 +215,7 @@ h6 {
   }
 
   .hamburger {
-    display: none; /* Show hamburger menu on mobile */
+    display: block; /* Show hamburger menu on mobile */
   }
 }
 
@@ -288,7 +288,7 @@ h7 {
   color: blue;
   text-decoration: underline;
   font-weight: bold;
-  margin:0;
+  margin:0 ;
   padding:0;
 }
 
