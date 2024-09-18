@@ -206,7 +206,7 @@ h6 {
   }
 
   .hamburger {
-    display: block; /* Show hamburger menu on mobile */
+    display: none; /* Show hamburger menu on mobile */
   }
 
   .sidebar {
