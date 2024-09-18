@@ -213,7 +213,7 @@ h6 {
   h1, h2, h4, h5, h6 {
     margin: 5px; /* Smaller margins for headings on mobile */
     padding: 8px; /* Adjust padding */
-    font-size: 40px;
+    font-size: 35px;
   }
 
   #background-image {
