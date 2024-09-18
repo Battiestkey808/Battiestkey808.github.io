@@ -29,8 +29,7 @@ body {
 }
 
 /* Heading styling */
-h1, h2, h4, h5, h6
-{
+h1, h2, h4, h5, h6 {
   background-color: #9DD1F1;
   color: black;
   border: 3px solid black;
@@ -42,23 +41,23 @@ h1, h2, h4, h5, h6
   text-transform: uppercase;
 }
 
-h1{
+h1 {
   margin-top: 50px;
 }
 
-h2{
-   margin-top: 140px;
-   margin-bottom: 150px;
+h2 {
+  margin-top: 140px;
+  margin-bottom: 150px;
 }
 
-h4{
+h4 {
   font-size: 50px;
-  color:black;
+  color: black;
   font-weight: bold;
-  margin-top:30px;
+  margin-top: 30px;
 }
 
-h5{
+h5 {
   margin-top: 50px;
   font-size: 50px;
   margin-bottom: 50px;
@@ -80,7 +79,7 @@ h6 {
 }
 
 /* Logo styling */
-.top-bar .logo  {
+.top-bar .logo {
   color: #fff;
   text-decoration: none;
   font-size: 24px;
@@ -138,6 +137,7 @@ h6 {
   display: block;
 }
 
+/* Sidebar styling */
 .sidebar {
   height: 100%;
   width: 250px; /* Width of the sidebar */
@@ -208,19 +208,22 @@ h6 {
   .hamburger {
     display: block; /* Show hamburger menu on mobile */
   }
+
+  .sidebar {
+    width: 80%; /* Make the sidebar narrower for mobile */
+  }
 }
 
-.info-box, .update-notice, .calendar-container{
+/* Info box and calendar styling */
+.info-box, .update-notice, .calendar-container {
   background-color: #9DD1F1;
   border: 2px solid black; /* Light border */
   padding: 20px; /* Space inside the box */
-  margin: 20px 0; /* Space outside the box */
+  margin: 20px auto; /* Space outside the box */
   border-radius: 4px; /* Rounded corners */
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
   max-width: 95%; /* Optional: max width for the box */
-  margin: auto; /* Center the box horizontally */
   text-align: center; /* Align text to the center */
-  margin-bottom: 50px;
 }
 
 .gen-info {
@@ -229,15 +232,15 @@ h6 {
   color: black; /* Text color */
 }
 
-.boldneeded{
+.boldneeded {
   font-weight: bold;
 }
 
-.faq-info{
+.faq-info {
   text-align: left;
 }
 
-#address{
+#address {
   font-weight: bold;
   text-align: center;
 }
@@ -245,6 +248,18 @@ h6 {
 h7 {
   text-align: center;
   font-size: 35px;
+}
+
+.calendar-body {
+  display: flex;
+  justify-content: center;
+  margin: 20px auto;
+}
+
+.calendar-container {
+  width: 80%; /* Responsive width */
+  max-width: 1200px; /* Set max width for large screens */
+  margin: 0 auto;
 }
 
 .calendar-table {
@@ -258,6 +273,7 @@ h7 {
   border: 1px solid #ddd;
   padding: 15px;
   text-align: center;
+  font-size: 20px;
   vertical-align: top;
   height: 100px; /* Uniform cell height */
 }
@@ -281,37 +297,36 @@ h7 {
   font-weight: bold;
 }
 
-
 /* Styling for the clickable box */
 .clickable-box {
-    width: 300px;
-    height: 150px;
-    background-color: #3fadf1;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    font-size: 18px;
-    border-radius: 10px;
-    cursor: pointer;
-    transition: background-color 0.3s;
-    margin-left: 50px;
+  width: 300px;
+  height: 150px;
+  background-color: #3fadf1;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 18px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-left: 50px;
 }
 
 .clickable-box:hover {
-    background-color: #1fa2f3;
+  background-color: #1fa2f3;
 }
 
 /* Ensure the <a> tag fills the entire box */
 .clickable-box a {
-    text-decoration: none;
-    color: white;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  text-decoration: none;
+  color: white;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .wrapper-main {
@@ -319,8 +334,8 @@ h7 {
   width: 500px;
 }
 
-textarea{
-  width:100%;
+textarea {
+  width: 100%;
   height: 100px;
   resize: horizontal;
 }
