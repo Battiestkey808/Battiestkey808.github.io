@@ -191,7 +191,7 @@ h6 {
 
 /* Hamburger styling */
 .hamburger {
-  display: none; /* Ensure it's always visible */
+  display: block; /* Ensure it's always visible */
   cursor: pointer;
   color: #fff;
   font-size: 24px;
